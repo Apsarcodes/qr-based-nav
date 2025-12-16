@@ -421,7 +421,7 @@ function ScannerCard({ onScan, onSimulate, scanValue, setScanValue, cameraEnable
     <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
       <div className="flex items-center justify-between mb-4">
         <div>
-          <p className="text-xs uppercase tracking-wide text-gray-500">QR Scanner</p>
+          <p className="text-xs uppercase tracking-wide text-gray-500">Scan QR Code</p>
           <h2 className="text-xl font-semibold text-blue-900">Scan your location</h2>
         </div>
         <div className={`px-3 py-1 rounded-full text-sm ${status === "Ready" ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-700"}`}>
@@ -451,7 +451,7 @@ function ScannerCard({ onScan, onSimulate, scanValue, setScanValue, cameraEnable
               className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-colors sm:w-auto w-full"
               onClick={onSimulate}
             >
-              Simulate QR Scan
+              Simulate Scan
             </button>
             <button
               className={`px-4 py-2 rounded-lg border font-semibold transition-colors sm:w-auto w-full ${
@@ -575,7 +575,7 @@ function TopNav() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-yellow-400" />
-          <span className="font-semibold text-blue-900">QRNavi</span>
+          <span className="font-semibold text-blue-900">INSTACAMPUS</span>
         </div>
         <div className="flex items-center gap-3 text-sm text-gray-700">
           <Link to="/" className="hover:text-blue-900">Home</Link>
@@ -596,13 +596,13 @@ function CampusPage() {
         <ul className="text-gray-700 mt-3 space-y-2">
           <li>QR format: <strong>BUILDING-FLOOR-ROOM</strong> (e.g., CS-2-201).</li>
           <li>Popular buildings: CS, LIB, EIN, NEW, ADM, CANT.</li>
-          <li>Use “Simulate QR Scan” to quickly set Computer Science Floor 2 Room 201.</li>
+          <li>Use “Simulate Scan” to quickly set Computer Science Floor 2 Room 201.</li>
         </ul>
       </div>
       <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
         <h3 className="text-lg font-semibold text-blue-900 mb-2">Tips</h3>
         <ul className="text-gray-700 space-y-2">
-          <li>Allow camera access for live QR scanning.</li>
+          <li>Allow camera access for live scanning.</li>
           <li>Use “Navigate to Next Destination” to chain hops without rescanning.</li>
           <li>Voice guidance can be toggled in the navigation panel.</li>
         </ul>
@@ -726,7 +726,7 @@ function HomePage(props) {
         <header className="bg-blue-900 text-white header-compact shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="text-center md:text-left">
             <p className="text-xs uppercase tracking-wide text-blue-100">SKCET Campus</p>
-            <h1 className="text-lg-mobile text-white leading-tight">QRNavi Scan &amp; Go</h1>
+            <h1 className="text-lg-mobile text-white leading-tight">INSTACAMPUS</h1>
             <p className="text-blue-100 mt-1 text-balance">
               Indoor navigation with QR-powered location, chained destinations, text + voice guidance, and a live indoor map.
             </p>
